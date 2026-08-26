@@ -98,10 +98,10 @@ function createBoundingBoxFromGltf(
         
   // Take into account the y-up-to-z-up transform:
   const tMinX = minX;
-  const tMinY = -minZ;
+  const tMinY = -maxZ;
   const tMinZ = minY;
   const tMaxX = maxX;
-  const tMaxY = -maxZ;
+  const tMaxY = -minZ;
   const tMaxZ = maxY;
   return createBoundingBox(
       tMinX, tMinY, tMinZ, 
