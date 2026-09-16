@@ -5,7 +5,7 @@
   "geometricError" : 1.0,
   "root" : {
     "boundingVolume" : {
-      "box" : [ 0.5, 0.5, 1.0, 0.5, 0.0, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0 ]
+      "box" : [ 0.5, 0.5, 1.0, 0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 1.0 ]
     },
     "geometricError" : 0.0,
     "refine" : "REPLACE",
