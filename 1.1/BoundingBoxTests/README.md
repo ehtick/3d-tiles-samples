@@ -96,7 +96,12 @@ function createBoundingBoxFromGltf(
     minX, minY, minZ, 
     maxX, maxY, maxZ) {
         
-  // Take into account the y-up-to-z-up transform:
+  // Take into account the y-up-to-z-up transform by mapping
+  // y to z and -z to y. Note that the minus sign reverses
+  // the order of min and max so we have to swap them.
+  // In real code you might want to explicitly compare every
+  // min and max and make sure they're in the right order so
+  // that your code can handle potentially malformed data.
   const tMinX = minX;
   const tMinY = -maxZ;
   const tMinZ = minY;
